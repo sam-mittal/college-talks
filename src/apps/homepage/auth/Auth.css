@@ -1,0 +1,34 @@
+.Auth {
+    overflow-x: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.SignUpLink{
+    display : none;
+    
+}
+.SignUpLink:active{
+    background-color: rgba(255,255,255,0.8);
+
+}
+@media (max-width : 768px){
+    .SignUpLink{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        margin-bottom: 10px;
+        background-color: rgba(255,255,255,0.3);
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: white;
+        font-size: 30px;
+        margin-bottom: 0;
+        padding-top: 12px;
+        margin-top: 50px;
+    }
+}

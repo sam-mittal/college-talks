@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+.Rcontainer{
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 4%;
+}
+.labelContainer{
+    width: 90%;
+    height :100%;
+}
+
+.CenterContainer {
+    padding-bottom: 30px;
+}
+
+.SummaryContent{
+    font-family: 'Josefin Sans', sans-serif;
+    color: #746875;
+    font-size: 20px;
+    line-height: 4px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    padding: 10px;
+    white-space: pre-wrap;
+}
+
+.ProfilePhoto {
+    margin-right: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    height: 20vw;
+    margin-top: 10px;
+}
+
+.ProfileContainer {
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.InterestContainer {
+    width: 100%;
+    padding: 30px;
+    margin-top: 10px;
+    min-height: 50vh; 
+}
+
+.BioContainer {
+    width: 100%;
+    padding: 30px;
+    min-height: 50vh; 
+    /* margin-left: 10px;  */
+}
+
+.PhotosContainer {
+    width: 100%;
+    margin-top: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px;
+
+    min-height: 50vh; 
+    
+}
+
+
+.LikeButton {
+    background-color: rgb(250, 133, 117);
+    width: 100%;
+    height: 50px;
+    border-radius: 35px;
+}
+
+
+.ProfileButtonsContainer {
+    margin-top: 5%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.PhotoTabPhotos {
+    width: 7cm;
+    /* height: 7cm; */
+    /* margin-top: 20px; */
+}
+
+@media (max-width:768px){
+   .ProfileContainer{
+       width : 100%;
+       margin:0;
+   }
+   .Rcontainer{
+       width : 100%;
+       margin:0;
+   }
+   .BioContainer{
+       width : 100%;
+       margin:0;
+   }
+   .InterestContainer{
+       width : 100%;
+       margin:0;
+   }
+   .PhotosContainer{
+       width : 100%;
+       margin:0;
+   }
+
+   .ProfileImage {
+       height: 300px;
+       width: 300px;
+   }
+
+   .ProfilePhoto {
+       width: 80vw;
+       height: 80vw;
+   }
+
+
+    .PhotoTabPhotos {
+        margin-top: 20px;
+    }
+
+}

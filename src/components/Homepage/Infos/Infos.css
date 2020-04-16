@@ -1,0 +1,5 @@
+.Infos {
+    display: inline-flex;
+    flex-direction: column;
+    margin-top: 50px;
+}

@@ -1,0 +1,76 @@
+.CenterContainer {
+    align-items: center;
+    height: 80vh;
+}
+
+.LeftContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.LeftContainerHeader {
+    color: #2D4571;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.LeftContainerContent {
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+
+.ButtonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.Button {
+    border-radius: 35px 35px 35px 35px;
+    padding: 10%;
+    width: 100%;
+    height: 100%;
+}
+
+.RightContainer {
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LandingpageImage {
+    width: 150%;
+}
+
+@media screen and (max-width: 768px) {
+    .CenterContainer {
+        display: flex !important;
+        height: auto;
+        align-items: center;
+        flex-direction: column;
+
+    }
+    .LeftContainer {
+        margin-top: 5%;
+        order: 2;
+        width: 100vw;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .RightContainer {
+        order: 1;
+        width: 100vw;
+    }
+
+    .Button {
+        padding: 5%;
+    }
+
+}

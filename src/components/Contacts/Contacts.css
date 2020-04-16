@@ -1,0 +1,61 @@
+.Contacts {
+    margin-top: 5px;
+    height: 60vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    margin-bottom: 10px;
+    background-color: #252b30;
+}
+
+.Contacts::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #252b30;
+}
+
+.Contacts::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #252b30;
+}
+
+.Contacts::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	background-color: #555;
+}
+
+.DropDownButton {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .Contacts {
+        height: 0; 
+        transition: height 1s;
+    }
+    
+    .Expand {
+        border-bottom: 1px solid #ccc;
+        height: 75vh;
+    }
+
+    .ExpandAll {
+        border-bottom: 1px solid #ccc;
+        height: 90vh;
+    }
+
+    .DropDownButton {
+        display: inline;
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        z-index: 2;
+        padding-top:10px;
+    }
+    .Downarrow{
+        height:20px;
+        width:20px;
+    }
+}

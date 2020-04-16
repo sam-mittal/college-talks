@@ -1,0 +1,18 @@
+.CenterContainer {
+    /* height: 100%; */
+    /* width: 100vw; */
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: auto;   
+    /* background-color: rgb(189, 184, 118); */
+    /* border-radius: 30px 30px 30px 30px; */
+
+}
+
+@media screen and (max-width:768px){
+   .CenterContainer {
+       display: inline-block;
+       width: 100vw;
+   }
+}

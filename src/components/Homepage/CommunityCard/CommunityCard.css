@@ -1,0 +1,49 @@
+.CommunityCard {
+    width: 11rem;
+    height: 12rem;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 10px;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    display: inline-flex; 
+    background-size: cover;
+    background-position: -200px 0px;
+    transition: transform 0.5s;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 30px;
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+}
+
+.CommunityCard:hover {
+    transform: scale(1.2);
+}
+
+.CommunityCardImage {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.CommunityCardText {
+    z-index: 2;
+    color: white;
+    background-color: #9D354B;
+    width: 100%;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+    .CommunityCard {
+        width: 13rem;
+        height: 14rem;
+    }
+}

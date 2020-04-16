@@ -1,0 +1,264 @@
+.ProfileSection {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    width: 90%;
+    margin-top: 10px;
+    position: relative;
+}
+
+.Name {
+    font-weight: bolder;
+    font-size: 22px;
+}
+
+.Age {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.CollegeName {
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.Matchbox {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.MatchboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ViewProfile {
+    text-decoration: none;
+    color: blue;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.ViewProfile:visited {
+    color: blue;
+}
+
+.DesktopPhotos {
+    display: flex;
+    width: 100%;
+}
+
+.MobilePhoto {
+    display: none;
+}
+
+
+.MainFooter {
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.AboutSection {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+
+.SelfSummaryBox {
+    width: 70%;
+}
+
+.SelfSummaryBoxHeader {
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 10px;
+}
+
+.SelfSummaryBoxContent {
+    letter-spacing: 2px;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.AboutBox {
+    padding: 10px;
+    padding-left: 10%;
+    letter-spacing: 2px;
+    line-height: 30px;
+    width: 100%;
+}
+
+.AboutKey {
+    font-weight: bold; 
+}
+
+.TagsContainer {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.TagHeading {
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+.Button {
+    width: 12%;
+    border-radius: 50px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.InfoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.AgeContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+.DesktopPhotos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 95%;
+    justify-content: space-around;
+}
+
+.ContentContainer {
+    width: 90%;
+    margin-bottom: 50px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .ProfileSection {
+        order: 2;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    .ProfileSection::after {
+        content: "";
+        border: 0.5px solid grey;
+        width: 100%;
+        margin-top: 5px;
+    }
+    
+    .CollegeName:after {
+        content: "";
+    }
+
+    .Matchbox {
+        order: 4;
+    }
+
+    .MainFooter {
+        display: none;
+    }
+
+    .ViewProfile {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+    .AboutSection {
+        display: block;
+        margin-top: 10px;
+        order: 3;
+        width: 100%;
+        padding-left: 5%;
+    }
+    
+
+    .Button {
+        font-size: 25px;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        position: fixed;
+        bottom: 15px;
+        padding: 0;
+        z-index: 2;
+    }
+
+    .Button>span {
+        display: none;
+    }
+
+    .DesktopPhotos {
+        display: none;
+    }
+
+    .MobilePhoto {
+        display: inline-block;
+        text-align: center;
+        order: 1;
+        margin-top: 25px;
+    }
+
+    .InfoContainer {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding-left: 5%;
+    }
+
+    .AgeContainer {
+        flex-direction: row;
+    }
+
+    .Matchbox {
+        position: absolute;
+        top: 80px;
+        right: 10%;
+        width: 50px;
+        height: 50px;
+    }
+
+
+    .SelfSummaryBox {
+        width: 100%;
+    }
+
+    .ContentContainer { 
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-bottom: 100px;
+    }
+
+    .TagsContainer {
+        order: 5;
+    }
+
+    .AboutBox {
+        padding-left: 10px;
+    }
+
+}

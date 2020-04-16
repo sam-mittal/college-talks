@@ -1,0 +1,30 @@
+.AddNewContainer {
+    height:200px;
+    width: 200px;
+    margin: 10px;
+    margin-top: 70px;
+    position: relative;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.AddNewContainer:hover{
+    background-color: lightgray;
+}
+
+.PhotoUpload {
+    display: none;
+}
+
+.AddNewIcon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+@media (max-width:768px){
+    .AddNewContainer{
+        height: 120px;
+    }
+}

@@ -1,0 +1,1 @@
+module.exports.SERVER_URL = "http://54.196.98.79:3000";

@@ -1,0 +1,225 @@
+.Homepage {
+    overflow-x: hidden;
+}
+
+.CardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.PeopleTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.Logo {
+    font-size: 40px;
+}
+
+.GreetingMessage {
+    font-size: 2em;
+}
+
+.LoginContainer {
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.SignupContainer {
+    font-size: 20px;
+    color: white;
+    margin-top: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.LogoutButton {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+.CommunityTitle {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 2em;
+    margin-bottom: 0px;
+    text-align: center;
+    margin-top: 20px;
+
+}
+
+.CommunityContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 600px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.AboutContainer {
+    width: 100vw;
+    padding: 10px;
+    padding-right: 20px;
+    background-color: rgb(56, 56, 54);
+    letter-spacing: 2px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 2px solid black;
+    color: azure;
+}
+
+
+.PeopleHolder {
+    align-items: center;
+}
+
+.LoggedIn {
+    font-weight: bold;
+    letter-spacing: 5px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.FooterContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;   
+    background-color: #26272b;
+    color: #737373;
+}
+
+.UpperFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.UpperLeft {
+    width: 50%;
+}
+
+.FooterTitle {
+    font-size: 30px;
+}
+
+.UpperRight {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.GithubLink {
+    /* color: #737373; */
+    /* border: 2px solid white; */
+    border-radius: 100%;
+}
+
+.GithubLink>img {
+    width: 50px;
+}
+
+.AboutContent {
+    margin-top: 10px;
+}
+
+.FooterDivider {
+    margin-top: 20px;
+    width: 100%;
+    border: 1px solid #737373;
+}
+
+.FooterTitle {
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+}
+
+.LowerFooter {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.LowerFooterContent {
+    width: 97%;
+}
+
+@media screen and (max-width: 768px) {
+    .CardContainer {
+        flex-direction: column;
+    }
+
+    .CommunityTitle {
+        margin-top: 50px;
+    }
+
+    .CommunityContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .AboutContainer {
+        font-size: 18px;
+    }
+
+    .Logo {
+        font-size: 20px;
+    }
+
+    .GreetingMessage {
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .LogoutButton {
+        top: 10px;
+    }
+
+    .UpperFooter {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .FooterTitle {
+        text-align: center;
+    }
+
+
+    .UpperLeft {
+        width: 100%;
+    }
+
+    .UpperRight {
+        margin-top: 50px;
+        width: 100%;
+    }
+}

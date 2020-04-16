@@ -1,0 +1,18 @@
+.ContentTitleContainer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    width:100%;
+    padding: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color:white;
+    background-color: #9D354B;
+}
+
+
+.ContentTitle {
+    margin-left: 5px;
+}

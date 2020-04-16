@@ -1,0 +1,36 @@
+.CenterContainer {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+.ComingSoon {
+    font-size: 2.5rem;
+    color: #ccc;
+}
+
+.Links {
+    display: flex;
+    flex-direction: row;
+}
+
+.Link {
+    margin: 10px;
+    text-decoration: none;
+    color: #ccc;
+}
+
+.Link:visited {
+    color: #ccc;
+}
+@media screen and (max-width: 768px) {
+    .CenterContainer {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        justify-content: center;
+    }
+}

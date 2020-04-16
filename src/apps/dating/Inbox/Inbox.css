@@ -1,0 +1,118 @@
+.Inbox {
+    height: calc(100vh - 100px);
+    width: 90vw;
+    flex-direction: row;
+    margin-bottom: 50px;
+    background-color:#d1d1d1;
+    /* overflow-y: hidden; */
+}
+
+.ContactsContainer {
+    width: 30%;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    position: relative;
+    overflow: hidden;
+    border-right: 1px solid #ccc;
+    background-color: #252b30;
+}
+
+
+
+.ProfileHeader {
+    padding: 10px;
+    background-color: #252b30;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color:white;
+}
+
+
+.MessageBoxContainer {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#d1d1d1;
+}
+
+.EmptyBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    background-color:#d1d1d1;
+}
+
+.ProfileName {
+    font-weight: bold;
+}
+
+.EmptyBoxMessage {
+    font-size: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ExtraEmptyBoxMessage {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+
+    .Inbox {
+        flex-wrap: wrap;
+        width: 100%;
+        border-radius: 0;
+        height: 90vh;
+    }
+
+    .ContactsContainer {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    
+    .ProfileHeader {
+        display: none;
+    }
+
+    .MessageBoxContainer {
+        width: 100vw;
+        padding-top: 0;
+        height: 97%;
+    }
+
+    .SearchContainer {
+        width: 85%;
+        height: 50%;
+    }
+
+    .ExtraEmptyBoxMessage { 
+        display: block;
+        text-align: center;
+    }
+
+    .Inbox {
+        padding: 0;
+        margin: 0;
+    }
+
+    .ProfileName {
+        order: 1;
+        margin-bottom: 60px;
+    }
+
+    .ProfileImage {
+        order: 2;
+    }
+
+    .EmptyBoxMessage {
+        order: 3;
+    }
+
+}

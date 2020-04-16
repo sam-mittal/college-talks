@@ -1,0 +1,15 @@
+.Tags {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .Tags {
+        flex-direction: row;
+    }
+}
